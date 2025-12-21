@@ -2,10 +2,12 @@ import pygame
 from constants import SCREEN_HEIGHT, SCREEN_WIDTH
 from logger import log_state
 
-pygame.init()
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+
 
 def main():
+    pygame.init()
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    
     while True:
         log_state()
         for event in pygame.event.get():
